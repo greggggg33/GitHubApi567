@@ -19,12 +19,12 @@ def getNumOfCommits(ID: str):
         myDic[repoName] = numOfCommits
     print("For User ID: " + userID)
     for repo in myDic:
-        print("Repo: " + repo + "Number of commits: " + myDic[repo]) #Output a list of the names of the repositories that the user has, along with the number of commits that are in each of the listed repositories.
+        print("Repo: " + repo + "Number of commits: " + str(myDic[repo])) #Output a list of the names of the repositories that the user has, along with the number of commits that are in each of the listed repositories.
     return myDic
 
 class TestGetNumOfCommits(unittest.TestCase):
     def test_get_commits(self):
-        self.assertEqual(getNumOfCommits("greggggg33"),{'GitHubApi567': 11, 'greggggg33': 2, 'SSW-555-Project': 3, 'SSW567-Triangle': 13, 'Student-Repository': 3, 'SW-567': 4})
+        self.assertEqual(getNumOfCommits("greggggg33"),{'GitHubApi567': 12, 'greggggg33': 2, 'SSW-555-Project': 3, 'SSW567-Triangle': 13, 'Student-Repository': 3, 'SW-567': 4})
 
 if __name__ == "__main__":
     unittest.main()
