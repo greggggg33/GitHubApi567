@@ -24,7 +24,7 @@ def getNumOfCommits(ID: str):
 
 class TestGetNumOfCommits(unittest.TestCase):
     def test_get_commits(self):
-        self.assertEqual(getNumOfCommits("greggggg33"),{'GitHubApi567': 8, 'greggggg33': 2, 'SSW-555-Project': 3, 'SSW567-Triangle': 13, 'Student-Repository': 3, 'SW-567': 4})
+        self.assertEqual(getNumOfCommits("greggggg33"),{'GitHubApi567': 10, 'greggggg33': 2, 'SSW-555-Project': 3, 'SSW567-Triangle': 13, 'Student-Repository': 3, 'SW-567': 4})
 
 if __name__ == "__main__":
     unittest.main()
