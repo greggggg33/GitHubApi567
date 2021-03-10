@@ -24,9 +24,9 @@ def getNumOfCommits(ID: str):
 
 class TestGetNumOfCommits(unittest.TestCase):
     def test_get_commits(self):
-        self.assertEqual(getNumOfCommits("greggggg33"),{'GitHubApi567': 13, 'greggggg33': 2, 'SSW-555-Project': 3, 'SSW567-Triangle': 13, 'Student-Repository': 3, 'SW-567': 4})
+        self.assertEqual(getNumOfCommits("greggggg33"),{'GitHubApi567': 14, 'greggggg33': 2, 'SSW-555-Project': 3, 'SSW567-Triangle': 13, 'Student-Repository': 3, 'SW-567': 4})
         self.assertEqual(len(getNumOfCommits("sherlock")), 16)
-        self.assertEqual(getNumOfCommits("qier222").get("YesPlayMusic"),348)
+        self.assertEqual(getNumOfCommits("qier222").get("YesPlayMusic"),30)
 
 
 if __name__ == "__main__":
